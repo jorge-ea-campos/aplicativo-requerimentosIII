@@ -493,7 +493,7 @@ if "password_correct" not in st.session_state:
     st.session_state["password_correct"] = False
 
 if not st.session_state["password_correct"]:
-    st.title("� Acesso Restrito")
+    st.title("🔒 Acesso Restrito")
     try:
         correct_password = st.secrets["passwords"]["senha_mestra"]
     except (AttributeError, KeyError):
@@ -511,4 +511,3 @@ if not st.session_state["password_correct"]:
                     st.error("Senha incorreta.")
 else:
     run_app()
-�
