@@ -397,7 +397,7 @@ def run_app():
         file_requerimentos = st.file_uploader("**2. Pedidos do Semestre Atual**", type=["xlsx", "csv"])
         files_he = st.file_uploader(
             "**3. Históricos Escolares (PDF)**", 
-            type="pdf", 
+            type=["pdf"], 
             accept_multiple_files=True,
             help="Nomeie cada arquivo com o NUSP do aluno (ex: 12345678.pdf)"
         )
